@@ -1,0 +1,243 @@
+Your Day 2 target is:
+
+Python: if / elif / else + logical operators
+Program: Grade Calculator
+DSA: 2 easy Python problems
+GitHub: Commit the Grade Calculator
+Career: Explain conditions aloud
+
+🎯 Day 2 — Exact Exit Target
+
+Don't move to Day 3 until you can complete these.
+
+1. Python Practice — Conditions
+
+Write these programs yourself without copying:
+
+ Program 1 — Positive / Negative / Zero
+Input a number
+Print whether it is positive, negative, or zero.
+ Program 2 — Even / Odd
+Input an integer
+Determine whether it is even or odd.
+ Program 3 — Largest of 3 Numbers
+Take three numbers
+Print the largest.
+ Program 4 — Voting Eligibility
+Input age
+If age ≥ 18 → eligible
+Otherwise → not eligible.
+ Program 5 — Temperature Checker
+Input temperature
+< 0 → Freezing
+0–15 → Cold
+16–25 → Comfortable
+>25 → Hot
+⭐ 2. Main Program — Grade Calculator
+
+This is today's must-finish project.
+
+Create:
+
+grade_calculator.py
+
+It should:
+
+Ask for student's name.
+Ask for marks in 5 subjects.
+Calculate total.
+Calculate percentage.
+Determine grade.
+
+Use something like:
+
+Percentage	Grade
+90–100	A+
+80–89	A
+70–79	B
+60–69	C
+50–59	D
+Below 50	F
+
+Then add:
+
+ Check whether the student passed.
+ Handle invalid marks such as -10 or 110.
+ Print a clean result.
+Example output
+Student: Loveleen
+
+Math: 85
+Python: 92
+SQL: 78
+English: 88
+Computer Science: 95
+
+Total: 438/500
+Percentage: 87.6%
+Grade: A
+Status: PASS
+
+Important: Don't just make it work. Try to make the code clean and readable.
+
+🧠 3. Learn These Conditions
+
+Before finishing today, you should understand:
+
+if
+elif
+else
+
+>
+<
+>=
+<=
+==
+!=
+
+and
+or
+not
+
+And be able to explain the difference between:
+
+=
+
+and
+
+==
+
+For example:
+
+age = 23
+
+means assign 23 to age.
+
+age == 23
+
+means check whether age is 23.
+
+🧩 4. DSA — 2 Easy Problems
+
+Today's tracker requires 2 easy problems.
+
+Problem 1 — Two Sum
+
+Given:
+
+nums = [2, 7, 11, 15]
+target = 9
+
+Return the indices of the two numbers that add up to the target.
+
+Expected:
+
+[0, 1]
+
+Try it yourself first.
+
+After solving, answer:
+
+What is the brute-force approach?
+What is its time complexity?
+Can you solve it using a dictionary?
+Why is the dictionary approach faster?
+Problem 2 — Contains Duplicate
+
+Given:
+
+nums = [1, 2, 3, 1]
+
+Return:
+
+True
+
+because 1 appears twice.
+
+Test:
+
+[1,2,3,4] → False
+[1,1,2,3] → True
+[5,6,7,8,9] → False
+
+After solving, explain:
+
+Why is a set useful for this problem?
+
+💻 5. GitHub — Today's Commit
+
+After completing the programs, put your work in your Python foundations repository.
+
+Your structure can be:
+
+python-foundations/
+│
+├── day01/
+│   └── basics.py
+│
+└── day02/
+    ├── conditions.py
+    ├── grade_calculator.py
+    ├── positive_negative.py
+    ├── even_odd.py
+    ├── largest_number.py
+    ├── voting_eligibility.py
+    ├── temperature_checker.py
+    └── dsa/
+        ├── two_sum.py
+        └── contains_duplicate.py
+
+Then commit:
+
+feat: complete day 2 python conditions practice
+🗣️ 6. Career Practice — Explain It Out Loud
+
+Spend 10 minutes answering these without reading notes:
+
+Question 1
+
+What is an if statement in Python?
+
+Question 2
+
+What is the difference between if, elif, and else?
+
+Question 3
+
+What is the difference between = and ==?
+
+Question 4
+
+What does and do?
+
+Question 5
+
+What does or do?
+
+Question 6
+
+How would you explain your Grade Calculator project to an interviewer?
+
+Try saying:
+
+"I built a Python grade calculator that takes five subject marks, validates the input, calculates the total and percentage, and uses conditional logic to determine the student's grade and pass/fail status."
+
+⏰ Your 3-Hour Schedule
+Time	Task
+0:00–0:30	Learn/review conditions + logical operators
+0:30–1:15	5 small Python programs
+1:15–2:00	Build Grade Calculator
+2:00–2:40	Two Sum + Contains Duplicate
+2:40–2:50	GitHub commit
+2:50–3:00	Explain conditions + project aloud
+✅ Day 2 is COMPLETE when:
+ You can use if/elif/else without help.
+ You understand comparison operators.
+ You understand and, or, not.
+ You completed all 5 mini-programs.
+ Your Grade Calculator works.
+ You solved Two Sum.
+ You solved Contains Duplicate.
+ You understand why set helps with duplicates.
+ Everything is committed to GitHub.
+ You can explain your code aloud.
