@@ -1,0 +1,4 @@
+#Ask the user for n and print 1-n
+n=int(input("Enter n: "))
+for i in range (1,n+1):
+    print(i)
