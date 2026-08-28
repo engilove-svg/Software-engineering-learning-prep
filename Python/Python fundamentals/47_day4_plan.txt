@@ -1,0 +1,422 @@
+🟢 Day 4 — Python Strings
+
+Main goal: Understand strings deeply, not just memorize methods.
+
+⏱️ Total: ~3 hours
+
+1. Python — Strings, Indexing & Slicing
+
+Learn:
+
+What a string is
+Indexing: s[0], s[-1]
+Slicing: s[1:5], s[:4], s[::2]
+String immutability
+len()
+.lower(), .upper()
+.strip()
+.replace()
+.split()
+.join()
+.find()
+.count()
+in operator
+
+Don't just watch/read. Write small examples for every concept.
+
+2. Build: Text Analyzer
+
+Your program should take a sentence from the user and report things such as:
+
+Number of characters
+Number of words
+Number of vowels
+Number of spaces
+Number of occurrences of a chosen character
+The sentence in uppercase/lowercase
+The reversed string
+
+Then test it with at least 5 different inputs.
+
+
+------------------------------------------------------------------------------
+STEP 1:
+---------------------------------------------------------------------
+Ques. What is string?
+Ans.  A string is a sequence of characters enclosed in quotes.
+For eg.  like name="Loveleen"
+ Here:
+
+name → variable
+"Loveleen" → string
+Each letter is a character
+-----------------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------------------
+STEP 2:
+--------------------------------------------------------------------------------
+---Strings have positions---
+
+Python gives every character an index (position).
+
+For example:
+
+L  o  v  e  l  e  e  n
+0  1  2  3  4  5  6  7
+
+So:
+
+name = "Loveleen"
+
+print(name[0])
+print(name[1])
+print(name[3])
+
+Output:
+
+L
+o
+e
+-----Important ⭐------
+
+Python indexing starts at 0, not 1.
+
+So the first character is:
+
+name[0]
+
+not:
+
+name[1]
+
+-------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------
+STEP 3.
+--------------------------------------------------------------------------------------------
+----Negative Indexing----------
+Python can also count from the end.
+
+L  o  v  e  l  e  e  n
+-8 -7 -6 -5 -4 -3 -2 -1
+
+Therefore:
+
+print(name[-1])
+
+gives: n
+
+And:
+
+print(name[-2])
+
+gives: e
+
+---------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------
+STEP 4:
+-----------------------------------------------------------------------------------------
+---------Slicing ✂️---------
+
+Now let's learn something very important for DSA.
+
+Slicing lets us take part of a string.
+
+The syntax is:
+
+string[start:end]
+
+⚠️ The end index is not included.
+---⭐ Important rule----
+
+Remember:
+Start is included, end is excluded.
+
+Example:
+
+word = "Programming"
+
+print(word[0:4])
+
+Indexes:
+
+P r o g r a m m i n g
+0 1 2 3 4 5 6 7 8 9 10
+
+word[0:4] takes indexes 0, 1, 2, 3:
+
+Prog
+
+------------🔥 Now let's make slicing more powerful--------------
+
+You can also omit the start or end:
+
+word[:7]
+
+means from the beginning to index 6.
+
+word[7:]
+
+means from index 7 to the end.
+
+And:
+
+word[:]
+
+means the entire string.
+--------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------
+STEP 5:
+------------------------------------------------------------------------------------------
+Now we add a third number:
+
+word[start:end:step]
+
+The step tells Python how many positions to jump.
+For example:
+
+word = "Programming"
+
+print(word[::2])
+
+This means:
+
+Start at the beginning → go to the end → take every 2nd character.
+
+Try to predict the output before running it.
+
+For "Programming":
+
+P r o g r a m m i n g
+↑   ↑   ↑   ↑   ↑   ↑
+--------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------
+STEP 6:
+------------------------------------------------------------------------------------------------------------
+-----String methods------------------------
+Now that you understand indexing and slicing, we'll learn the most useful built-in string methods.
+
+Start with:
+
+text = "  Hello Python  "
+
+
+
+1. .lower()
+
+Converts everything to lowercase:
+
+print(text.lower())
+
+Output:
+
+  hello python  
+
+
+
+2. .upper()
+
+Converts everything to uppercase:
+
+print(text.upper())
+
+Output:
+
+  HELLO PYTHON  
+
+
+
+3. .strip()
+
+Removes spaces from the beginning and end:
+
+print(text.strip())
+
+Output:
+
+Hello Python
+
+⚠️ It does not remove spaces between words.
+
+
+
+4. .replace()
+
+.replace(old, new) replaces one piece of text with another.
+
+text = "I like Python"
+
+print(text.replace("Python", "C++"))
+
+Output:
+
+I like C++
+  
+
+
+5. .split()
+
+.split() breaks a string into a list of words.
+
+text = "I love Python"
+
+print(text.split())
+
+Output:
+
+['I', 'love', 'Python']
+
+Notice that the result is a list, not a string.
+
+You can also split using a specific separator:
+
+text = "apple,banana,mango"
+
+print(text.split(","))
+
+Output:
+
+['apple', 'banana', 'mango']
+
+
+
+6. .join()
+
+.join() does the opposite—it combines items into one string.
+
+words = ["Python", "is", "fun"]
+
+sentence = " ".join(words)
+
+print(sentence)
+
+Output:
+
+Python is fun
+
+Here " " means we want a space between each word.
+
+
+7. .find()
+
+.find() tells you the index where some text starts.
+
+text = "I love Python"
+
+print(text.find("Python"))
+
+Output:
+
+7
+
+Because:
+
+I   l o v e   P y t h o n
+0 1 2 3 4 5 6 7 8 9 10...
+            ↑
+---One important thing about .find()------
+
+If Python cannot find the text, .find() returns:
+
+-1
+
+
+8. .count()
+.count() tells you how many times something appears.
+
+text = "banana"
+
+print(text.count("a"))
+
+Output:
+
+3
+
+Because:
+
+b a n a n a
+  ↑   ↑   ↑
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+Method	Purpose
+.lower()	Converts to lowercase
+.upper()	Converts to uppercase
+.strip()	Removes outside spaces
+.replace()	Replaces text
+.split()	String → list
+.join()	List → string
+.find()	Finds index
+.count()	Counts occurrences
+----------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------
+STEP 7:
+-----------------------------------------------------------------------------------------------------------
+----Checking characters with in-----
+
+The in operator lets you check whether something exists inside a string.
+
+text = "Python"
+
+print("P" in text)
+
+Output:
+
+True
+
+Because "P" exists in "Python".
+
+But:
+
+print("z" in text)
+
+Output:
+
+False
+You can also check for a word:
+text = "I love Python"
+
+print("Python" in text)
+print("Java" in text)
+
+Output:
+
+True
+False
+
+-----------------------------------------------------------------------------
+STEP 8:
+-------------------------------------------------------------------------------
+----len()-----------
+len() tells you the number of characters in a string.
+
+word = "Python"
+
+print(len(word))
+
+Output:
+
+6
+
+It counts spaces too:
+
+text = "Hi there"
+
+print(len(text))
+
+Hi there has 8 characters:
+
+H i _ t h e r e
+1 2 3 4 5 6 7 8
+
+So the output is:
+
+8
+-------------------------------------------------------------------
