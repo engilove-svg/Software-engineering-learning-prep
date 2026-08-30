@@ -1,0 +1,55 @@
+🐍 Part 1 — Python Fundamentals
+A. Tuples
+
+Learn:
+
+What tuples are
+Creating tuples
+Indexing
+Negative indexing
+Tuple unpacking
+Immutability
+len()
+Basic tuple methods: count(), index()
+---------------------------------------------
+B. Sets
+
+Learn:
+
+What a set is
+Creating sets
+No duplicate values
+add()
+remove()
+discard()
+in
+len()
+Set union/intersection basics
+------------------------------------------
+C. Dictionaries
+
+Learn:
+
+Key-value pairs
+Creating dictionaries
+Accessing values
+Adding/updating values
+keys()
+values()
+items()
+get()
+Removing entries
+Looping through dictionaries
+Checking whether a key exists
+---------------------------------------------------
+D. Mini-project — Contact Book 📱
+
+We'll build a simple program that can:
+
+1. Add a contact
+2. Store name + phone number
+3. Search for a contact
+4. Display contacts
+5. Remove a contact
+
+We'll build it step-by-step, not copy-paste the entire thing.
