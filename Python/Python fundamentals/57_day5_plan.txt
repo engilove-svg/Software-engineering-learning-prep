@@ -1,0 +1,27 @@
+🟢 Day 5 — Python Lists
+
+Today's goal is:
+
+Learn Python lists + list methods → build a Shopping List program
+
+We'll keep Python separate from your C++ DSA.
+
+Today's exact topics
+What is a list?
+Creating lists
+Accessing elements with indexes
+Changing elements
+Adding elements — append()
+Adding at a specific position — insert()
+Adding multiple elements — extend()
+Removing elements — remove()
+Removing by index — pop()
+Clearing a list — clear()
+Checking membership — in
+Finding length — len()
+Sorting — sort()
+Reversing — reverse()
+Looping through lists
+Mini-project: Shopping List Program 🛒
+
+We'll learn each one and you'll write small examples yourself before we build the project.
