@@ -1,0 +1,13 @@
+Linear search may need to check every element, so its time complexity is O(n).
+Hashing provides average O(1) lookup, so we can find data much faster.
+
+unordered_map
+It stores:
+
+key → value
+
+For example:
+Student ID → Marks
+101 → 85
+102 → 92
+103 → 78
