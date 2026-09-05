@@ -1,0 +1,3 @@
+Food: $20
+Rent: $500
+Coffee: $5
