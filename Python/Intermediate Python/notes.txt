@@ -1,0 +1,26 @@
+🧠 One distinction I want you to remember
+pip install
+
+Installs a package.
+
+pip install requests
+pip list
+
+Shows installed packages.
+
+pip list
+pip freeze
+
+Shows installed packages with versions, commonly used to create a dependency list.
+
+pip freeze
+pip freeze > requirements.txt
+
+Saves those dependencies into a file.
+
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+Installs everything listed in that file.
+
+pip install -r requirements.txt
