@@ -1,4 +1,4 @@
-from tasks import add_task,view_tasks
+from tasks import add_task,view_tasks,delete_task
 
 def show_menu():
     print("\n =================TASK MANAGER=================")
@@ -18,11 +18,10 @@ while True:
         view_tasks()
 
     elif choice == "3":
-        print("Delete task selected")
+        delete_task()
 
     elif choice == "4":
         print("Goodbye!")
         break
-
     else:
         print("Invalid choice. Please try again.")
