@@ -8,3 +8,5 @@ class Car(Vehicle):
         print("Car engine is starting")
 
 
+car1 = Car()
+car1.start()
