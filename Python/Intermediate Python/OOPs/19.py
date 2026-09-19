@@ -3,6 +3,7 @@ def my_decorator(function):
     def wrapper():
         print("Starting function...")
         function()
+        print("After function")
 
     return wrapper
 
